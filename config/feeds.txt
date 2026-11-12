@@ -1,0 +1,4 @@
+# Un medio por línea: nombre;dirección del RSS
+# Las líneas que empiezan por # se ignoran.
+pv magazine España;https://www.pv-magazine.es/feed/
+El Periódico de la Energía;https://elperiodicodelaenergia.com/feed/
