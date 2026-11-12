@@ -1,0 +1,13 @@
+# Un tema por línea: tema;palabras separadas por comas (en minúsculas, sin importar acentos)
+# Un titular puede caer en varios temas. Si no cae en ninguno queda como "Sin tema".
+Almacenamiento;almacenamiento,bateria,baterias,bess,bombeo
+Hibridación;hibridacion,hibrido,hibrida,hibridos
+Solar;fotovoltaica,fotovoltaico,solar,autoconsumo
+Eólica;eolica,eolico,aerogenerador
+Redes y acceso;red electrica,redes,acceso y conexion,nudo,nudos,capacidad de red,ree,red electrica de espana,distribucion
+Precios y mercado;precio,precios,pool,mercado mayorista,omie,ppa,spread,precios negativos,vertidos
+Mercado de capacidad;mercado de capacidad,subasta de capacidad
+Regulación;decreto,real decreto,boe,miteco,cnmc,ley,normativa,regulacion,ministerio
+Centros de datos;centro de datos,centros de datos,data center,cpd
+Hidrógeno y gases;hidrogeno,biometano,gases renovables
+Nuclear;nuclear
