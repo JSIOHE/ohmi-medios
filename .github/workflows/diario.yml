@@ -1,0 +1,28 @@
+name: Captura diaria de medios
+
+on:
+  schedule:
+    - cron: "15 5 * * *"   # todos los días a las 05:15 UTC
+  workflow_dispatch:        # permite lanzarlo a mano con el botón "Run workflow"
+
+permissions:
+  contents: write
+
+jobs:
+  medios:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Leer los RSS
+        run: python scripts/rss.py
+      - name: Guardar los titulares en el repositorio
+        run: |
+          git config user.name "ohmi-captura"
+          git config user.email "ohmi-captura@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "Titulares del $(date -u +%F)"
+          git pull --rebase
+          git push
